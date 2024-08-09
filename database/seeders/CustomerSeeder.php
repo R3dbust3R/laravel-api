@@ -13,11 +13,11 @@ class CustomerSeeder extends Seeder
      */
     public function run(): void
     {
-        for ($i=0; $i < 10; $i++) { 
+        for ($i=0; $i < 20; $i++) { 
             Customer::factory(
-                random_int(1, 10)
+                random_int(1, 20)
             )->hasInvoices(
-                random_int(1, 10)
+                random_int(1, 20)
             )->create();
         }
     }
